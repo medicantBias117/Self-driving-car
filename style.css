@@ -2,6 +2,24 @@ body{
     margin:0;
     background:darkgray;
     overflow:hidden;
+    
+}
+
+#topLayer{
+    height: 50px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(43, 43, 43);
+    color: rgb(255, 255, 255);
+}
+
+#canvasLayer{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -10,22 +28,26 @@ body{
 #verticalButtons{
     display:flex;
     flex-direction:column;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 button{
     border: none;
-    border-radius: 5px;
-    padding: 5px 5px 7px 5px;
-    margin: 2px;
+    border-radius: 20px;
+    padding: 15px 15px 17px 15px;
+    margin: 10px;
     cursor:pointer;
+    background-color:cadetblue;
+    font-size: 120%;
 }
 button:hover{
-    background:blue;
+    background: rgb(43, 87, 88);
 }
 
 #networkCanvas{
-    background:black;
+    background:rgb(22, 22, 22);
 }
 #carCanvas{
-    background:lightgray;
+    background:rgb(233, 233, 233);
 }

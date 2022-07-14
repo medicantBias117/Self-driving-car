@@ -4,12 +4,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="carCanvas"></canvas>
-    <div id="verticalButtons">
-        <button onclick="save()">💾</button>
-        <button onclick="discard()">🗑️</button>
+    <div id="topLayer">
+        <span id="generation">10</span>
+        <span id="time">12:20</span> 
     </div>
-    <canvas id="networkCanvas"></canvas>
+    <div id="canvasLayer">
+        <canvas id="carCanvas"></canvas>
+        <div id="verticalButtons">
+            <button onclick="startstop()">🐤</button>
+            <button onclick="save()">💾</button>
+            <button onclick="discard()">🗑️</button>
+            <button onclick="nukeEm()">💥</button>
+        </div>
+        <canvas id="networkCanvas"></canvas>
+    </div>
+        
     <script src="visualizer.js"></script>
     <script src="network.js"></script>
     <script src="sensor.js"></script>

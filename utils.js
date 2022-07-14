@@ -41,10 +41,14 @@ function polysIntersect(poly1, poly2){
 
 function getRGBA(value){
     const alpha=Math.abs(value);
-    const R=value<0?0:255;
-    const G=R;
-    const B=value>0?0:255;
-    return "rgba("+R+","+G+","+B+","+alpha+")";
+
+    if(value>0){
+        return "rgba(251,232,1,"+alpha+")";
+    }
+    else{
+        return "rgba(255,255,255,"+alpha+")";
+    }
+
 }
 
 function getRandomColor(){
@@ -52,3 +56,6 @@ function getRandomColor(){
     return "hsl("+hue+", 100%, 60%)";
 }
                 
+function randBetween(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
